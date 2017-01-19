@@ -53,13 +53,13 @@ class SheetReader
         $scopes = implode(' ', array(\Google_Service_Sheets::SPREADSHEETS_READONLY));
 
         $client = new \Google_Client();
-        $client->setApplicationName(config('googlesheet.APPLICATION_NAME'));
+        $client->setApplicationName(config('kayacsheet.APPLICATION_NAME'));
         $client->setScopes($scopes);
-        $client->setAuthConfig(config('googlesheet.CLIENT_SECRET_PATH'));
+        $client->setAuthConfig(config('kayacsheet.CLIENT_SECRET_PATH'));
         $client->setAccessType('offline');
 
         // Load previously authorized credentials from a file.
-        $credentialsPath = $this->expandHomeDirectory(config('googlesheet.CREDENTIALS_PATH'));
+        $credentialsPath = $this->expandHomeDirectory(config('kayacsheet.CREDENTIALS_PATH'));
         if (file_exists($credentialsPath)) {
             $accessToken = json_decode(file_get_contents($credentialsPath), true);
         } else {

@@ -6,7 +6,7 @@ Lấy dữ liệu từ google sheet
 
 1. Run 
     ```
-    composer require kayac/sheet:1.4.x@dev
+    composer require kayac/sheet:1.6.x@dev
     ```
     
 2. Add service provider into **config/app.php** file.
