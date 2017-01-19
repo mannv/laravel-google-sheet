@@ -18,6 +18,10 @@ class SheetReader
     {
     }
 
+    public function generateKey() {
+        $this->getClient();
+    }
+
     /**
      * @param $spreadsheetId
      * VD: 1uZ6czXs48hERfZaVGlHgQ9Y7yb3FsjKgbL_iclEV8qQ
