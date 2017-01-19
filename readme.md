@@ -17,7 +17,7 @@ Lấy dữ liệu từ google sheet
 
 4. publish kayacsheet.php to config folder
 ```
-php artisan vendor:publish --provider="Kayac\Sheet" --tag=config
+php artisan vendor:publish --provider="Kayac\Sheet\CallRouteServiceProvider" --tag=config
 ```
 
 ## Commands
