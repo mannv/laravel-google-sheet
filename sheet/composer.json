@@ -1,0 +1,31 @@
+{
+  "name": "kayac/sheet",
+  "type": "library",
+  "license": "MIT",
+  "description": "Google sheet with laravel",
+  "keywords": [
+    "dingo",
+    "lumen",
+    "google client",
+    "google laravel"
+  ],
+  "authors": [
+    {
+      "name": "Ha Anh Man",
+      "email": "man.nv@kayac.vn"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kayac\\Sheet\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
