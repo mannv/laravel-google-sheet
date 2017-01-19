@@ -7,7 +7,7 @@
  */
 namespace Kayac\Sheet;
 use Illuminate\Support\ServiceProvider;
-class RouterCallCommandServiceProvider extends ServiceProvider
+class CallRouteCommandServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
