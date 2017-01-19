@@ -18,4 +18,22 @@ class CallRouteServiceProvider extends ServiceProvider
     {
         $this->commands(CallRoute::class);
     }
+
+
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        
+        $configPath = __DIR__ . '/../config/kayacsheet.php';
+        if (function_exists('config_path')) {
+            $publishPath = config_path('kayacsheet.php');
+        } else {
+            $publishPath = base_path('config/kayacsheet.php');
+        }
+        $this->publishes([$configPath => $publishPath], 'config');
+    }
 }
