@@ -23,6 +23,9 @@ class CallRoute extends Command
         parent::__construct();
     }
 
+    /**
+     * call route from CLI mode
+     */
     public function handle()
     {
         $this->fire();
