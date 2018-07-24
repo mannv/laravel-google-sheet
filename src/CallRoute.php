@@ -5,12 +5,15 @@
  * Date: 1/19/2017
  * Time: 4:05 PM
  */
+
 namespace Kayac\Sheet;
+
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Illuminate\Http\Request;
 
-class CallRoute extends Command {
+class CallRoute extends Command
+{
 
     protected $name = 'route:call';
     protected $description = 'Call route from CLI';
@@ -18,6 +21,11 @@ class CallRoute extends Command {
     public function __construct()
     {
         parent::__construct();
+    }
+
+    public function handle()
+    {
+        $this->fire();
     }
 
     public function fire()
